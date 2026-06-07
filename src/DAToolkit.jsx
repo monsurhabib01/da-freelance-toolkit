@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const API = "https://api.anthropic.com/v1/messages";
+// Calls our own backend proxy — API key never leaves the server
+const API = "/api/chat";
 
 async function askClaude(system, user) {
   try {
